@@ -12,4 +12,8 @@ export class VolumeGroupController {
      return this.volumeGroupService.create(createVGDto);
   }
 
+  @Get()
+  async list() {
+    return this.volumeGroupService.list();
+  }
 }
