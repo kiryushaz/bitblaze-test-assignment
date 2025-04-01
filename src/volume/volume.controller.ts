@@ -11,4 +11,8 @@ export class VolumeController {
     return this.volumeService.create(createVGDto);
   }
 
+  @Get()
+  list() {
+    return this.volumeService.list();
+  }
 }
